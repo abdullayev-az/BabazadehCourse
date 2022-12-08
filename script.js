@@ -1,9 +1,9 @@
 $('.nav-bars').click(function(){
-   $('.offcanvas').fadeIn();
+   $('.offcanvas').css({'transform':'translateX(0)'});
    $('html').css({'overflow':'hidden'});
 });
 $('.close i').click(function(){
-    $('.offcanvas').fadeOut();
+    $('.offcanvas').css({'transform':'translateX(-100%)'});
     $('html').css({'overflow':'auto'});
 });
 
